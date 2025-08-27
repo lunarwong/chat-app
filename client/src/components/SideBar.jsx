@@ -32,7 +32,7 @@ const SideBar = ({selectedUser, setSelectedUser}) => {
 
   return (
     <div className={`bg-[#8185B2]/30 h-full p-5 rounded-r-xl overflow-y-scroll 
-      text-white ${selectedUser ? "max-md:hidden" : ""}
+       ${selectedUser ? "max-md:hidden" : ""}
     `}>
       <div className="pb-5">
 
@@ -79,7 +79,7 @@ const SideBar = ({selectedUser, setSelectedUser}) => {
               <p>{user.fullName}</p>
               {
                 index < 3
-                ? <span className="text-[#b0ff8f] text-xs">Online</span>
+                ? <span className="text-[#106d26] text-xs">Online</span>
                 : <span className="text-neutral-400 text-xs">Offline</span>
               }
             </div>
