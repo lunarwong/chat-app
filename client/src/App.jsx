@@ -6,7 +6,7 @@ import Profile from "./pages/Profile";
 
 const App = () => {
   return (
-    <div className="bg-[url('./src/assets/spectralBg.jpg')] bg-cover">
+    <div>
       <Routes>
         <Route path="/" element={ <Homepage /> }/>
         <Route path="/login" element={ <Login /> }/>

@@ -8,7 +8,9 @@ const Homepage = () => {
     const [selectedUser, setSelectedUser] = useState(false)
 
   return (
-    <div className=" w-full h-screen sm:px-[15%] sm:py-[5%]">
+    <div className=" w-full h-screen sm:px-[15%] sm:py-[5%]
+      bg-[url('./src/assets/spectralBg.jpg')] bg-cover
+    ">
         <div className={`border-2 border-amber-50 rounded-4xl 
             h-[100%]
             backdrop-blur-xl

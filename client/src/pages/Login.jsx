@@ -1,9 +1,11 @@
 import React from "react";
-import SignInPanel from "../components/SignInPanel";
+import LogInPanel from "../components/SignInPanel";
 
 const Login = () => {
   return (
-    <div className="w-full h-screen sm:px-[15%] sm:py-[5%]">
+    <div className="w-full h-screen sm:px-[15%] sm:py-[5%]
+      bg-[url('./src/assets/mistnovaBg.jpeg')] bg-cover
+    ">
       
       <div className="h-[100%] overflow-hidden 
         grid grid-cols-1 relative
@@ -18,7 +20,7 @@ const Login = () => {
           <h1 className="text-white text-2xl">Let's have a C(h)at !</h1>
         </div>
 
-        <SignInPanel />
+        <LogInPanel />
 
       </div>
       
