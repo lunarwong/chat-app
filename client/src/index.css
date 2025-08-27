@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Parkinsans:wght@300..800&display=swap');
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h1, h2, h3 {
+   font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
