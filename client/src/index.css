@@ -1,9 +1,13 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Parkinsans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 * {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1, h2, h3 {
@@ -12,6 +16,7 @@ h1, h2, h3 {
   font-weight: 600;
   font-style: normal;
 }
+
 
 ::-webkit-scrollbar {
   display: none;

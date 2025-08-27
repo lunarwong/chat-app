@@ -10,7 +10,7 @@ const SideBar = ({selectedUser, setSelectedUser}) => {
     {
       "_id": "ID001",
       "email": "lauralovetuna@catmail.chat",
-      "fullName": "Laura",
+      "fullName": "Laura Pinkpaw",
       "profilePic": "./src/assets/profilePic/mikhail-vasilyev-IFxjDdqK_0U-unsplash.jpg",
       "bio": "Meow meowmeow meow meow!",
     },
@@ -31,18 +31,18 @@ const SideBar = ({selectedUser, setSelectedUser}) => {
   ]
 
   return (
-    <div className={`bg-[#8185B2]/10 h-full p-5 rounded-r-xl overflow-y-scroll 
+    <div className={`bg-[#8185B2]/30 h-full p-5 rounded-r-xl overflow-y-scroll 
       text-white ${selectedUser ? "max-md:hidden" : ""}
     `}>
       <div className="pb-5">
 
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <img src="./src/assets/latte-the-cat-logo.PNG" alt="logo" className="max-w-10" />
+            <img src="./src/assets/icons/catChatIcon.PNG" alt="logo" className="max-w-10" />
             <h2 >C(h)at</h2>
           </div>
           <div className="relative py-2 group">
-            <img src="./src/assets/moon-logo-v2.PNG" alt="Menu" className="max-h-5 cursor-pointer" />
+            <img src="./src/assets/icons/menuFish.PNG" alt="Menu" className="max-h-5 cursor-pointer" />
             <div className="absolute top-full right-0 z-20 w-32 p-5 rounded-md
               bg-[#282142] border border-gray-600 text-gray-100 hidden group-hover:block
             ">
@@ -54,7 +54,7 @@ const SideBar = ({selectedUser, setSelectedUser}) => {
         </div>
 
         <div className="bg-[#473d59] rounded-full flex items-center gap-2 py-3 px-4 mt-5">
-          <img src="" alt="Search" className="w-3" />
+          <img src="./src/assets/icons/searchIcon.PNG" alt="Search" className="w-3" />
           <input type="text" className="bg-transparent border-none outline-none 
             text-white text-xs placeholder-[#acb6e8] flex-1" 
             placeholder="Search User" 
@@ -79,7 +79,7 @@ const SideBar = ({selectedUser, setSelectedUser}) => {
               <p>{user.fullName}</p>
               {
                 index < 3
-                ? <span className="text-green-400 text-xs">Online</span>
+                ? <span className="text-[#b0ff8f] text-xs">Online</span>
                 : <span className="text-neutral-400 text-xs">Offline</span>
               }
             </div>
