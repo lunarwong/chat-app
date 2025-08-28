@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {useNavigate} from 'react-router-dom'
 
 
@@ -30,6 +30,8 @@ const SideBar = ({selectedUser, setSelectedUser}) => {
     },
   ]
 
+  const [isPanelOpen, setIsPanelOpen] = useState(false);
+
   return (
     <div className={`bg-[#8185B2]/30 h-full p-5 rounded-r-xl overflow-y-scroll 
        ${selectedUser ? "max-md:hidden" : ""}
@@ -42,10 +44,12 @@ const SideBar = ({selectedUser, setSelectedUser}) => {
             <h2 >C(h)at</h2>
           </div>
           <div className="relative py-2 group">
-            <img src="./src/assets/icons/menuFish.PNG" alt="Menu" className="max-h-5 cursor-pointer" />
-            <div className="absolute top-full right-0 z-20 w-32 p-5 rounded-md
-              bg-[#282142] border border-gray-600 text-gray-100 hidden group-hover:block
-            ">
+            <img onClick={() => setIsPanelOpen(!isPanelOpen)} 
+              src="./src/assets/icons/menuFish.PNG" alt="Menu" className="max-h-5 cursor-pointer" />
+            <div className={`absolute top-full right-0 z-20 w-32 p-5 rounded-md
+              bg-[#282142] border border-gray-600 text-gray-100 
+              ${isPanelOpen ? "block" : "hidden"}
+            `}>
               <p onClick={() => navigate('/profile')} className="cursor-pointer text-sm">Edit Profile</p>
               <hr className="my-2 border-t border-gray-500"/>
               <p className="cursor-pointer text-sm">Logout</p>
